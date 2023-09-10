@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utils.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="util.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
     
 </head>
 
@@ -16,31 +16,33 @@
     <script src="https://kit.fontawesome.com/9f9fae758f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="slide.js"></script>
-    <div class="heading">
+    <div class="heading" id="header">
     <header class="container">
         <nav class="flex space-between">
-            <div class="image"><img src="logo aman-PhotoRoom.png" class="logoaman" alt="logo"></div>
+            <div class="image"><img src="pics/logo aman-PhotoRoom.png" class="logoaman" alt="logo"></div>
             <div class="left flex items-center">
                 
-                <ul class="flex items-center justify-center uppercase semibold">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                <ul class="flex items-center" id="u">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about1">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#por">PORTFOLIO</a></li>
+                    <li><a href="#con">CONTACT</a></li>
+                    <i class="fa-solid fa-lock-open"  onclick="closemenu()" style="color: #ffffff;" ></i>
                     </ul>
             </div>
+            <i class="fa-solid fa-lock" id="faa" onclick="openmenu()" style="color: #ffffff;" ></i>
             </nav>
             </header>
             <div class="headertext1">
                 <p> UI/UX DESIGNER </p>
                 <h1>HI! I'm <span>Amanpreet</span> <br>From India</h1>
             </div>
-            <div class="about">
+            <div class="about" id="about1">
             <div class="container">
                <div class="row">
                 <div class="about-col-1">
-                    <img src="10259340_4401280-removebg-preview.png" alt="a">
+                    <img src="pics/10259340_4401280-removebg-preview.png" alt="a">
                 </div>
                 <div class="about-col-2">
                     <h1><span>ABOUT</span> ME</h1>
@@ -99,7 +101,7 @@
         </div>
         <div id="services">
             <div class="container">
-                <h1 class="sub-title">MY <span>
+                <h1 class="sub-title">MY<span>
                 SERVICES</span></h1>
                 <div class="services-list">
                     <div>
@@ -123,17 +125,17 @@
                 </div>
             
             </div>
-            <div class="worksection container"><h1 class="work">MY <span>WORK</span></h1>
+            <div class="worksection container" id="por"><h1 class="work">MY <span>WORK</span></h1>
             <div class="container1">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="pc.png"><div class="content active-content"><h3>PRODUCT CHAIR <i class="fa-solid fa-wheelchair"></i></h3>
+                        <div class="swiper-slide"><img src="pics/pc.png"><div class="content active-content"><h3>PRODUCT CHAIR <i class="fa-solid fa-wheelchair"></i></h3>
                         <p> Developed a modern and intuitive user interface using HTML5 and CSS3, focusing on clean code and adherence to web standards.Implemented responsive design techniques, enabling the Product Page to adapt seamlessly to different screen sizes, including mobile
                             devices and tablets</p></div></div>
-                        <div class="swiper-slide"><img src="my.png" ><div class="content active-content"><h3>MYNTRA CLONE <i class="fa-solid fa-bag-shopping"></i></h3><p>Developed a myntra clone using html5,css,and js </p></div></div>
-                        <div class="swiper-slide"><img src="cc.png" ><div class="content active-content"><h3>CALORIE COUNTER <i class="fa-solid fa-dumbbell"></i></h3><p>Made a calorie counter webapp through the use of many js based mathematics formulaes and simple slider UI </p></div></div>
-                        <div class="swiper-slide"><img src="sna.png"><div class="content active-content"><h3>SNAKE GAME <i class="fa-solid fa-staff-snake"></i></h3><p>Developed a snake game using html,css,js</p></div></div>
-                        <div class="swiper-slide"><img src="gd.png"><div class="content active-content"><h3>LOGIN PAGE <i class="fa-solid fa-right-to-bracket"></i></h3><p>made a login page using form template </p></div></div>
+                        <div class="swiper-slide"><img src="pics/my.png" ><div class="content active-content"><h3>MYNTRA CLONE <i class="fa-solid fa-bag-shopping"></i></h3><p>Developed a myntra clone using html5,css,and js </p></div></div>
+                        <div class="swiper-slide"><img src="pics/cc.png" ><div class="content active-content"><h3>CALORIE COUNTER <i class="fa-solid fa-dumbbell"></i></h3><p>Made a calorie counter webapp through the use of many js based mathematics formulaes and simple slider UI </p></div></div>
+                        <div class="swiper-slide"><img src="pics/sna.png"><div class="content active-content"><h3>SNAKE GAME <i class="fa-solid fa-staff-snake"></i></h3><p>Developed a snake game using html,css,js</p></div></div>
+                        <div class="swiper-slide"><img src="pics/gd.png"><div class="content active-content"><h3>LOGIN PAGE <i class="fa-solid fa-right-to-bracket"></i></h3><p>made a login page using form template </p></div></div>
 
                     </div>
                     <div class="swiper-pagination"></div>
@@ -142,7 +144,7 @@
                 </div>
                 </div>
             </div>
-            <div class="contact">
+            <div class="contact" id="con">
                 <div class="container">
                     <div class="row">
                         <div class="contact-left">
@@ -160,27 +162,60 @@
                                <a href=""class="btn btn-2">Download CV</a>
                                </div>
                                <div class="contact-right">
-                               <form>
+                               <form name="submit-to-google-sheet">
                                     <input type= "text" name= "Name" placeholder= "Your Name" required>
                                     <input type="email" name="email" placeholder= "Your Email" required>
                                     <textarea name= "Message" rows="6" placeholder= "Your Message"></textarea>
                                     <button type= "submit"class="btn btn-2">Submit</button>
                                 </form>
-                               
+                               <span id="msg"></span>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="copyright" style="display: flex; flex-wrap: wrap;align-items: center;margin-top: 4px;text-align: center;padding: 0 400px;"> <i class="fa-regular fa-registered">copyright registered 2023-</i>
-                <div class="image"><img src="logo aman-PhotoRoom.png" style="    width: 116px;
-                    height: 62px;
-                    margin-left: 5px
-                px
-                ;"></div></div>
+                <div class="copyright"> <i class="fa-regular fa-registered">copyright registered 2023-</i>
+                <div class="image"><img src="pics/logo aman-PhotoRoom.png" style="width: 116px;height: 62px;margin-left: 5px;">
+                </div></div>
             </div>
         </div>
-        
+        <script>
+            
+var side=document.getElementById("u");
+var icon=document.getElementById("faa");
+function openmenu(){
+    side.style.transition.right="0.5s";
+    icon.style.display="none";
+    side.style.display="block";
+    side.style.right="200px";
+}
+function closemenu(){
+    side.style.transition.left="0.5s";
+    side.style.right="-500px";
+    icon.style.display="block";
+    
+
+    
+}
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwPBzvEzOgBLTFsnNbhsMVQEkywEXz1G_Pevr2byrhVTkYqQBVrvPSANwbw6-AF2vE/exec'
+            const form = document.forms['submit-to-google-sheet'];
+            var mes=document.getElementById("msg");
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    mes.innerHTML="your message is posted";
+                    setTimeout(function(){
+                        mes.innerHTML="";
+                    },6000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
         
 </body>
 </html>

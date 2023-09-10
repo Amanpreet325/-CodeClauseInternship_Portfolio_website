@@ -10,3 +10,13 @@ for(tabcon of tabcontents){
 event.currentTarget.classList.add("active-link");
 document.getElementById(tabname).classList.add("active-tab");
 }
+document.addEventListener("DOMContentLoaded", function() {
+var side=document.getElementById("u");
+function openmenu(){
+    side.style.right="0px";
+}
+function closemenu(){
+    side.style.right="-200px";
+    
+}
+});

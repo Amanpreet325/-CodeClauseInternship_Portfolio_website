@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: black;
 }
@@ -15,10 +18,10 @@ body{
 .heading{
     width: 100%;
     height: 100vh;
-   background:url('Code typing-cuate.png');
+   background-image:url('pics/Code\ typing-cuate.png');
    background-repeat: no-repeat;
     background-color: black;
-   background-position: right;
+   background-position: center;
    background-repeat: no-repeat;
    background-size: contain;
    background-position-x: 22cm;
@@ -206,6 +209,7 @@ h1{
     margin-top: 60px;
 } 
 .about-col-1{
+    display: flex;
     flex-basis: 30%;
     margin-left: -67px;
 }
@@ -290,7 +294,7 @@ nav{
     margin-top: 50px;
     width: 0;
     height: 0;
-    background:black;
+    background:linear-gradient(rgb(0,0,0,0.6),#262626);
     position: absolute;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  
@@ -322,4 +326,120 @@ nav{
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0px 0px;
 }
+.copyright{
+    display: flex; flex-wrap: wrap;align-items: center;margin-top: 4px;text-align: center;padding: 0 400px;
+}
+/*small screen adaptation*/
+nav .fa-solid{
+     display: none;}
+@media only screen and (max-width: 600px){
+    .logoaman {
+        width: 170px;
+        padding-left: 29px;
+        /* height: 163px; */
+        height: 56px;
+        height: 87px;
+    }
+     .heading{
+        width: 669px;
+        height: 507px; 
+         background-image: url(pics/Code_typing-cuate_1_1_optimized.png);
+          object-fit: contain;
+   background-position: center;
+   background-position-x: 50px;
+   
+     }
+     nav  .fa-solid.fa-lock{
+        display: block;
+        margin: -58px 34px 48px 728px;
+        font-size: 50px;
+        transition: transform 0.5s;
+       
+     }
+     .headertext1{
+        margin-top: 329px;
+          font-size: 16px;
+     }
+     .headertext1 h1{
+          font-size: 30px;
+     }
+     nav .left ul .fa-solid.fa-lock-open{
+        display: block;
+        top: 25px;
+    left: 25px;
+    font-size: 30px;
+    
+}
 
+nav .left ul{
+    background:#262626;
+    margin: 3px 197px 36px -32px;
+    border-radius: 15px;
+    border-color: #fff;
+    border-style: solid;
+    position: fixed;
+    top: 0;
+    right: -200px;
+   width: 200px;
+    height: 50vh;
+    padding-top: 50px;
+    transition: right 0.5s;
+}
+nav .left ul li{
+    display: block;
+    margin: 25px;
+}
+nav .left ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.flex{
+    display: block;
+}
+.about-col-1 {
+    flex-basis: 100%;
+}
+.about-col-1 img{
+    justify-content: space-between;
+    padding-left: 20%;
+}
+.about-col-2{
+    flex-basis: 100%;
+    margin-left: -45px;
+}
+.about-col-2 h1{
+    padding-left: 56px;
+}
+.button.tab-links {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-titles{
+    margin-left: -30px;
+}
+.contact-left{
+    flex-basis: 30%;
+    width: 350px;
+}
+.contact-right{
+    flex-basis: 42%;
+}
+.contact{
+    height: 74vh;
+    width: 760px;
+}
+.copyright{
+    
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+    height: 100px;
+    padding-left: 150px;
+}
+
+}
